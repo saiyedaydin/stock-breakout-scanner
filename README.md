@@ -55,4 +55,9 @@ Trade management rules:
   - contraction patterns
   - volume dry-ups
   - breakout candles
-- C
+- Calculates:
+  - entry
+  - stop loss
+  - per-share risk
+  - position size
+  - profit targets based on R multiples
