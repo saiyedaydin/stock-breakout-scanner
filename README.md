@@ -32,7 +32,7 @@ When a breakout is detected:
 - Risk per trade is limited to 1% of account size
 - Position size is calculated using:
 
-Shares = Risk / (Entry - Stop)
+`Shares = Risk / (Entry - Stop)`
 
 Trade management rules:
 
@@ -61,3 +61,26 @@ Trade management rules:
   - per-share risk
   - position size
   - profit targets based on R multiples
+
+## Build and Run
+
+```bash
+make
+./scanner data/sample.csv
+```
+## Example Output
+```text
+Stock Breakout Scanner
+----------------------
+Pattern Found: Yes
+Breakout Date: 2026-02-20
+Entry Price: 106.20
+Stop Loss: 101.80
+Risk Per Share: 4.40
+Account Risk: 500.00
+Suggested Shares: 113
+5R Target: 128.20
+8R Target: 141.40
+10-day SMA Exit Active: Yes
+```
+
